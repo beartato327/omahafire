@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # Place custom apps here
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -161,3 +164,10 @@ WAGTAIL_SITE_NAME = "omahafire"
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
+
+
+# djauth/settings.py
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
+AUTH_USER_MODEL = 'users.CustomUser'
