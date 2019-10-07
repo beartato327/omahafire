@@ -1,0 +1,1 @@
+web: gunicorn omahafire.wsgi --log-file -
