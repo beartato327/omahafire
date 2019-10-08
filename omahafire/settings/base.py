@@ -183,8 +183,9 @@ BASE_URL = 'http://example.com'
 
 
 # djauth/settings.py
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+WAGTAIL_FRONTEND_LOGIN_URL = '/users/login/'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
