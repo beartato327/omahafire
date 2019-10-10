@@ -1,8 +1,64 @@
 {% load static %}
 
 {% block content %}
+ <!-- Card forms -->
   <div class="container">
-    
-    
+    <div class="row">
+      <div class="col-9">
+        <div class="card-group">
+        <!-- Injury On Duty Form -->
+        <div class="card">
+          <i class="fas fa-briefcase-medical fa-6x card-img-top" style="text-align:center;"></i>
+          <div class="card-body">
+            <h5 class="card-title">OFD 6</h5>
+            <p class="card-text">Injury On Duty</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-success btn-block">Report</button>
+          </div>
+        </div>
+        <!-- Vehicle AccidentForm -->
+        <div class="card">
+          <i class="fas fa-car-crash fa-6x card-img-top"  style="text-align:center;"></i>
+          <div class="card-body">
+            <h5 class="card-title">OFD 6A</h5>
+            <p class="card-text">Vehicle Accident</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-info btn-block">Report</button>
+          </div>
+        </div>
+        <!-- Biological Expsoure Form -->
+        <div class="card">
+          <i class="fas fa-biohazard fa-6x card-img-top"  style="text-align:center;"></i>
+          <div class="card-body">
+            <h5 class="card-title">OFD 6B</h5>
+            <p class="card-text">Biological Expsoure</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-danger btn-block">Report</button>
+          </div>
+        </div>
+        <!-- Hazmat Expsoure Form -->
+        <div class="card">
+          <i class="fas fa-flask fa-6x card-img-top"  style="text-align:center;"></i>
+          <div class="card-body">
+            <h5 class="card-title">OFD 6C</h5>
+            <p class="card-text">HazMat Expsoure</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning btn-block">Report</button>
+           </div>
+        </div>
+      </div>
+      </div>
+      <!-- Scrollspy Menu -->
+      <div class="col-3">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="list-item-1">My Claim</a>
+          <a class="list-group-item list-group-item-action" href="list-item-2">Review Queue</a>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock content %}
