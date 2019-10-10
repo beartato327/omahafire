@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     
     # Place custom apps here
     'users',
+    'reports',
 ]
 
 MIDDLEWARE = [

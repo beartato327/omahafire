@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-9">
-        <div class="card-group">
+        <div class="card-deck">
         <!-- Injury On Duty Form -->
         <div class="card">
           <i class="fas fa-briefcase-medical fa-6x card-img-top" style="text-align:center;"></i>
@@ -14,7 +14,7 @@
             <p class="card-text">Injury On Duty</p>
           </div>
           <div class="card-footer">
-            <button type="button" class="btn btn-success btn-block">Report</button>
+            <a class="btn btn-success btn-block" href="{% url 'injuryonduty' %}">Report</a>
           </div>
         </div>
         <!-- Vehicle AccidentForm -->
@@ -25,7 +25,7 @@
             <p class="card-text">Vehicle Accident</p>
           </div>
           <div class="card-footer">
-            <button type="button" class="btn btn-info btn-block">Report</button>
+            <a class="btn btn-info btn-block" href="{% url 'vehicleaccident' %}">Report</a>
           </div>
         </div>
         <!-- Biological Expsoure Form -->
@@ -36,7 +36,7 @@
             <p class="card-text">Biological Expsoure</p>
           </div>
           <div class="card-footer">
-            <button type="button" class="btn btn-danger btn-block">Report</button>
+            <a class="btn btn-danger btn-block" href="{% url 'biologicalexposure' %}">Report</a>
           </div>
         </div>
         <!-- Hazmat Expsoure Form -->
@@ -47,7 +47,7 @@
             <p class="card-text">HazMat Expsoure</p>
           </div>
           <div class="card-footer">
-            <button type="button" class="btn btn-warning btn-block">Report</button>
+            <a class="btn btn-warning btn-block" href="{% url 'hazmatexpsoure' %}">Report</a>
            </div>
         </div>
       </div>

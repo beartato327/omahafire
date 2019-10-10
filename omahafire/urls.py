@@ -15,6 +15,8 @@ urlpatterns = [
     # User paths
     path('users/', include('users.urls')),
     path('users/', include('django.contrib.auth.urls')),
+    
+    path('reports/',include('reports.urls')),
 
     path('admin/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
