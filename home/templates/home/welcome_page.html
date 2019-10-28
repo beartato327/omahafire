@@ -57,7 +57,9 @@
       <div class="col-3">
         <div id="list-example" class="list-group">
           <a class="list-group-item list-group-item-action" href="list-item-1">My Claim</a>
+          {% if request.user|has_group:"Managers" %}
           <a class="list-group-item list-group-item-action" href="list-item-2">Review Queue</a>
+          {% endif %}
         </div>
       </div>
     </div>
